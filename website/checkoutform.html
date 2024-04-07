@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  max-width: 600px; /* Set the desired width for the container */
+  margin: 0 auto; /* Center align the container */
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input-container input:focus {
+  outline: none;
+  border-color: #04AA6D;
+}
+
+.input-container input:focus + label {
+  color: #04AA6D;
+  transform: translateY(-20px);
+}
+
+.input-container label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #777;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+</style>
+</head>
+<body background="https://png.pngtree.com/background/20210711/original/pngtree-simple-atmosphere-online-shopping-hand-closeup-background-poster-picture-image_1102107.jpg">
+
+<center><h2>Checkout Form</h2></center>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form id="checkout-form" action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <div class="input-container">
+              <input type="text" id="fname" name="firstname" required>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            </div>
+            <div class="input-container">
+              <input type="text" id="email" name="email" required>
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            </div>
+            <div class="input-container">
+              <input type="text" id="adr" name="address" required>
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            </div>
+            <div class="input-container">
+              <input type="text" id="city" name="city" required>
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+            </div>
+
+            <div class="row">
+              <div class="col-50">
+                <div class="input-container">
+                  <input type="text" id="state" name="state" required>
+                  <label for="state">State</label>
+                </div>
+              </div>
+              <div class="col-50">
+                <div class="input-container">
+                  <input type="text" id="zip" name="zip" required>
+                  <label for="zip">Zip</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-50">
+            <h3>Payment</h3>
+            <div class="input-container">
+              <input type="text" id="cname" name="cardname" required>
+              <label for="cname">Name on Card</label>
+            </div>
+            <div class="input-container">
+              <input type="text" id="ccnum" name="cardnumber" required>
+              <label for="ccnum">Credit card number</label>
+            </div>
+            <div class="input-container">
+              <input type="text" id="expmonth" name="expmonth" required>
+              <label for="expmonth">Exp Month</label>
+            </div>
+            <div class="row">
+              <div class="col-50">
+                <div class="input-container">
+                  <input type="text" id="expyear" name="expyear" required>
+                  <label for="expyear">Exp Year</label>
+                </div>
+              </div>
+              <div class="col-50">
+                <div class="input-container">
+                  <input type="text" id="cvv" name="cvv" required>
+                  <label for="cvv">CVV</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+// JavaScript for form validation
+
+document.getElementById("checkout-form").addEventListener("submit", function(event) {
+  var isValid = validateForm();
+  
+  if (!isValid) {
+    event.preventDefault();
+  }
+});
+
+function validateForm() {
+  var firstName = document.getElementById("fname").value;
+  var email = document.getElementById("email").value;
+  var address = document.getElementById("adr").value;
+  var city = document.getElementById("city").value;
+  var state = document.getElementById("state").value;
+  var zip = document.getElementById("zip").value;
+  var cardName = document.getElementById("cname").value;
+  var cardNumber = document.getElementById("ccnum").value;
+  var expMonth = document.getElementById("expmonth").value;
+  var expYear = document.getElementById("expyear").value;
+  var cvv = document.getElementById("cvv").value;
+  
+  if (firstName === "" || email === "" || address === "" || city === "" || state === "" || zip === "" || cardName === "" || cardNumber === "" || expMonth === "" || expYear === "" || cvv === "") {
+    alert("Please fill in all fields.");
+    return false;
+  }
+  
+  return true;
+}
+</script>
+
+</body>
+</html>

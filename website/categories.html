@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Categories Of Books</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-top: 40px;
+      background-color: #fff;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-image {
+      flex: 0 0 100px;
+      margin-right: 20px;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .card-button {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .card-button:hover {
+      background-color: #555;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-content {
+      display: block;
+      margin: auto;
+      width: 80%;
+      max-width: 700px;
+      max-height: 90%;
+      text-align: center;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: auto;
+      padding: 10px;
+    }
+
+    .close {
+      color: #fff;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 30px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #ccc;
+    }
+
+    .back-button {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #555;
+    }
+
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <video src="D:\College\SVPCET\New folder\website\video.mp4" autoplay loop muted id="video-background"></video>
+  <div class="container">
+    <h1>Categories Of Books</h1>
+    <div class="gallery">
+        <div class="card">
+            <div class="card-image">
+              <img src="https://thumbs.dreamstime.com/b/headphones-books-logo-audiobook-online-learning-vector-education-concept-flat-design-238600374.jpg" alt="Book 1">
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Audio Books</h2>
+              <p class="card-description">Explore our captivating audiobook collection, where enchanting narratives and captivating stories come to life. Immerse yourself in a world of audio adventures, offering convenience and an immersive literary experience. Discover the joy of storytelling through our carefully curated selection of audiobooks</p>
+              <a href="file:///D:/College/SVPCET/New%20folder/website/audiobooks.html" class="card-button">Find My Book</a>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="https://c8.alamy.com/comp/2K0RAYC/book-icon-isolated-on-white-background-from-books-collection-book-icon-trendy-and-modern-book-symbol-for-logo-book-icon-simple-sign-book-icon-flat-2K0RAYC.jpg" alt="Book 2">
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Video Books</h2>
+              <p class="card-description">
+                "Discover our captivating video book collection, where stories unfold before your eyes. Immerse yourself in visually stunning narratives, bringing books to life through the power of video. Explore our carefully curated selection and experience the magic of storytelling in a whole new dimension,</p>
+              <a href="file:///D:/College/SVPCET/New%20folder/website/videobooks.html" class="card-button">Find My Book</a>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-image">
+              <img src="https://banner2.cleanpng.com/20180313/bjq/kisspng-book-clip-art-vector-books-5aa7e4180d5d73.8052949015209523440548.jpg" alt="Book 3">
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Hard-Cover Books</h2>
+              <p class="card-description">Delve into the timeless world of hardcover books, where the weight of each page carries the magic of storytelling. Explore our collection of meticulously crafted hardcover editions, providing a tactile and immersive reading experience. Discover the pleasure of holding a book in your hands and let the pages transport you to new literary horizons.</p>
+              <a href="file:///D:/College/SVPCET/New%20folder/website/books.html" class="card-button">Find My Book</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-image" src="" alt="">
+      </div>
+    </div>
+
+    <div class="back-button">
+      <a href="Main.html">Back</a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var video = document.getElementById("video-background");
+      video.play();
+    });
+  </script>
+</body>
+</html>

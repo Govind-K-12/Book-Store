@@ -1,0 +1,199 @@
+<html>
+<head>
+	<style>
+		.topnav {
+			overflow: hidden;
+			background-color:darkred;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.topnav a.active {
+			background-color: #04AA6D;
+			color: white;
+		}
+		
+		.dropbtn {
+			background-color: #333;
+			color: white;
+			padding: 10px;
+			font-size: 14px;
+			border: none;
+		}
+		.dropdown {
+			position: fixed;
+			display: inline-block;
+		}
+		.dropdown-content {
+			display: none;
+			position: left;
+			background-color: #7beef1;
+		}
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+		.dropdown-content a:hover {background-color: #ffffff;}
+		.dropdown:hover .dropdown-content {display: block;}
+		.dropdown:hover .dropbtn {background-color: #333;}
+		
+		h1 {
+			background-color: rgb(164, 85, 58);
+			font-size: 50px;
+			margin: 10px 0;
+			padding: 5px;
+			border-radius: 1px;
+		}
+
+		h3 {
+			font-size: 40.5px;
+			margin: 10px 0;
+			padding: 5px;
+			border-radius: 2.5px;
+		}
+
+		.book-container {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.book-card {
+			width: 250px;
+			background-color: rgba(255, 255, 255, 0.8);
+			margin: 20px;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.book-card img {
+			width: 100%;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+
+		.book-card h2 {
+			font-size: 24px;
+			margin: 10px 0;
+		}
+
+		.book-card p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 10px;
+		}
+
+		.buy-now-btn {
+			background-color: #04AA6D;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			text-decoration: none;
+			margin-top: 10px;
+		}
+
+		.buy-now-btn:hover {
+			background-color: #009688;
+		}
+	</style>
+</head>
+
+<body background="D:\College\SVPCET\New folder\website\peakpx.jpg" text="black" >
+	<div class="topnav">
+		<a class="active" href="main.html">Home</a>
+		<a href="file:///D:/College/SVPCET/New%20folder/website/categories.html">Categories</a>
+		<a href="file:///D:/College/SVPCET/New%20folder/website/Resume.html">About</a>
+		<a href="file:///D:/College/SVPCET/New%20folder/website/calculator.html">Calculator</a>
+		<a href="file:///D:/College/SVPCET/New%20folder/website/currencyconvert.html">Currency Converter</a>
+		<a href="file:///D:/College/SVPCET/New%20folder/website/feedbackform.html#action-url">Feedback</a>
+		<a style="float:right" href="sign_up.html">Sign Up</a>
+		<a style="float:right" href="log_in.html">Log In</a>
+
+	</div>
+	<br><br>
+	
+	
+	<h1 align="center">World Of Books</h1>
+	<h3 align=" center" style="color:#f2f2f2">Featured Books</h3>
+
+	<div class="book-container">
+		<div class="book-card">
+			<img src="https://ik.imagekit.io/panmac/tr:f-auto,di-placeholder_portrait_aMjPtD9YZ.jpg,w-270/edition/9781529077162.jpg" alt="Book 1">
+			<h2><center><a href = "https://www.amazon.in/Blood-Meridian-Picador-Collection-2/dp/1529077168?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1WYWER0W24N8S">Blood Meridian</a></center></h2>
+			<p>Brutally violent, Blood Meridian is the story of one teenage runaway in the nineteenth-century American South, as a sadistic gang unleashes its massacre across the desert land. It is the work that sealed Cormac McCarthy's reputation as one of the twentieth century's greatest writers – his magnum opus.</p><br>
+			<center><a class="buy-now-btn" href="file:///D:/College/SVPCET/New%20folder/website/checkoutform.html">Buy Now</a></center>
+		</div>
+
+		<div class="book-card">
+			<img src="https://ik.imagekit.io/panmac/tr:f-auto,di-placeholder_portrait_aMjPtD9YZ.jpg,w-270/edition/9781529077155.jpg" alt="Book 2">
+			<h2><a href="https://www.amazon.in/American-Psycho-Picador-Collection-1/dp/152907715X?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1WYWER0W24N8S">American Psycho</a></center></h2>
+			<p>Bret Easton Ellis’s American Psycho is one of the most controversial and talked-about novels of all time. A multi-million-copy bestseller hailed as a modern classic, it is a violent and outrageous black comedy about the darkest side of human nature.</p><br><br><br>
+			<center><a class="buy-now-btn" href="file:///D:/College/SVPCET/New%20folder/website/checkoutform.html">Buy Now</a></center>
+		</div>
+
+		<div class="book-card">
+			<img src="https://ik.imagekit.io/panmac/tr:f-auto,di-placeholder_portrait_aMjPtD9YZ.jpg,w-270/edition/9781909621732.jpg" alt="Book 3">
+			<h2><a href="https://www.amazon.in/Adventures-Sherlock-Holmes-Arthur-Conan/dp/8175993863/ref=asc_df_8175993863/?tag=googleshopdes-21&linkCode=df0&hvadid=397080052715&hvpos=&hvnetw=g&hvrand=16304145464403233875&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9303792&hvtargid=pla-366166861627&psc=1&ext_vrnc=hi">The Adventures of Sherlock Holmes</a></h2>
+			<p>The Adventures of Sherlock Holmes is perhaps the greatest collection of detective stories ever written.</p><br><br><br><br><br>
+			<center><a class="buy-now-btn" href="file:///D:/College/SVPCET/New%20folder/website/checkoutform.html">Buy Now</a></center>
+		</div>
+
+		<div class="book-card">
+			<img src="https://ik.imagekit.io/panmac/tr:f-auto,di-placeholder_portrait_aMjPtD9YZ.jpg,w-270/edition/9781509844760.jpg" alt="Book 4">
+			<h2><center><a href="https://www.amazon.in/Quixote-Penguin-Classics-Miguel-Cervantes/dp/0140449094/ref=asc_df_0140449094/?tag=googleshopdes-21&linkCode=df0&hvadid=397008082231&hvpos=&hvnetw=g&hvrand=5898300391762234802&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9303792&hvtargid=pla-470134370368&psc=1&ext_vrnc=hi">Don Quixote</a></center></h2>
+			<p>A masterpiece of world fiction and a brilliant satire on traditional romances, Don Quixote by Miguel de Cervantes is not only the world’s first modern novel – it is also an uproarious comedy that continues to delight readers today.</p><br><br><br>
+			<center><a class="buy-now-btn" href="file:///D:/College/SVPCET/New%20folder/website/checkoutform.html">Buy Now</a></center>
+		</div>
+
+		<div class="book-card">
+			<img src="https://ik.imagekit.io/panmac/tr:f-auto,di-placeholder_portrait_aMjPtD9YZ.jpg,w-270/edition/9781509826360.jpg" alt="Book 5">
+			<h2><center><a href="https://www.amazon.in/Great-Gatsby-F-Scott-Fitzgerald/dp/0743273567">The Great Gatsby</a></center></h2>
+			<p>In The Great Gatsby F. Scott Fitzgerald captures the flamboyance, the carelessness and the cruelty of the wealthy during America's Jazz Age.</p><br><br><br>
+			<center><a class="buy-now-btn" href="file:///D:/College/SVPCET/New%20folder/website/checkoutform.html">Buy Now</a></center>
+		</div>
+
+		<div class="book-card">
+			<img src="https://ik.imagekit.io/panmac/tr:f-auto,di-placeholder_portrait_aMjPtD9YZ.jpg,w-270/edition/9781509827756.jpg" alt="Book 6">
+			<h2><center><a href="https://www.amazon.in/Frankenstein-Mary-Shelley/dp/8175993162/ref=asc_df_8175993162/?tag=googleshopdes-21&linkCode=df0&hvadid=397082407664&hvpos=&hvnetw=g&hvrand=18122012798793637077&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9303792&hvtargid=pla-645745458155&psc=1&ext_vrnc=hi">Frankenstein</a></center></h2>
+			<p>One of BBC's 100 Novels That Shaped Our World. Frankenstein is the most famous novel by Mary Shelley: a dark parable of science misused.</p><br><br><br>
+			<center><a class="buy-now-btn" href="file:///D:/College/SVPCET/New%20folder/website/checkoutform.html">Buy Now</a></center>
+		</div>
+
+		<div class="book-card">
+			<img src="https://ik.imagekit.io/panmac/tr:f-auto,di-placeholder_portrait_aMjPtD9YZ.jpg,w-270/edition/9781447273301.jpg" alt="Book 7">
+			<h2><center><a href="https://www.amazon.in/Children-Time-Adrian-Tchaikovsky/dp/0316452505?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A34N6JGI0BMD4A">Children of Time</a></center>
+			</h2>
+			<p>Winner of the 30th anniversary Arthur C. Clarke Award for Best Novel.
+
+				Adrian Tchaikovksy's critically acclaimed novel Children of Time, is the epic story of humanity's battle for survival on a terraformed planet.</p><br>
+			<center><a class="buy-now-btn" href="file:///D:/College/SVPCET/New%20folder/website/checkoutform.html">Buy Now</a></center>
+		</div>
+
+		<div class="book-card">
+			<img src="https://assets-eu-01.kc-usercontent.com/bcd02f72-b50c-0179-8b4b-5e44f5340bd4/48d89e48-d208-4ba0-b1f9-7b52d1a6539d/Dune%20cover.jpg?w=270&h=417&auto=format&bg=%23efefef&fit=crop" alt="Book 8">
+			<h2><center><a href="https://www.amazon.in/Dune-Frank-Herbert/dp/0441172717/ref=asc_df_0441172717/?tag=googleshopdes-21&linkCode=df0&hvadid=397005694513&hvpos=&hvnetw=g&hvrand=7026902299774423558&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9303792&hvtargid=pla-432336524386&psc=1&ext_vrnc=hi">Dune</a></center>
+			</h2>
+			<p>Before The Matrix, before Star Wars, before Ender's Game and Neuromancer, there was Dune – widely considered one of the greatest sci-fi novels ever written. Melange, or 'spice', is the most valuable - and rarest - element in the universe. </p>
+			<center><a class="buy-now-btn" href="file:///D:/College/SVPCET/New%20folder/website/checkoutform.html">Buy Now</a></center>
+		</div>
+	</div>
+</body>
+</html>
